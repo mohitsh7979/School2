@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text">
+    <button>Submit</button>
+    <script>
+
+    document.querySelector("button").onclick = function(){
+
+        let val = document.querySelector("input").value;
+
+        let arr = ["mohit","rohit","ankit","aman","mohit"];
+
+        let data = arr.filter((item)=>{
+
+           return item == val;
+        })
+
+        if(data.length!=0){
+
+          alert(`value find ${data[0]}`)
+        }
+        else{
+          alert("value not found !!")
+        }
+      
+      }
+
+
+    //   let a = [1,8,9,26,5699,5];
+
+    //   let max = 0;
+    //   let s_max = 0;
+    //   let t_max = 0;
+
+    //   for (let i = 0; i < a.length; i++) {
+    //     if (a[i] > max) {
+    //       max = a[i];
+    //     }
+    // }
+
+    // for(let i = 0 ; i<a.length ; i++){
+
+    //     if (a[i] > t_max && a[i] < s_max && a[i] < max) {
+    //       t_max = a[i];
+    //     }
+    // }
+     
+    //   console.log(t_max)
+
+      // a.forEach(function (item) {
+      //   console.log(item);
+      // });
+
+      //    for(let i = 0 ; i<a.length ; i=i+2){
+
+      //     console.log(a[i])
+      //    }
+
+      // for(let i of a){
+      //     console.log(i)
+      // }
+
+      //   for (let i in a) {
+      //     console.log(a[i]);
+      //   }
+
+      //   let x =
+      //     {
+      //       id: 1,
+      //       name: "mohit",
+      //       age: 85,
+      //     };
+
+      //   for (let i in x) {
+      //     console.log(i,x[i]);
+      //   }
+
+
+      // Array Methods 
+
+      // push
+      // pop
+      // shift 
+      // unshift
+      // slice 
+      // splice
+      // map
+      // filter 
+      // reduce
+      // split
+      // join 
+      // flat
+
+
+      // [10.5,2,3,"mohit","rohit",8,1]
+
+      // let x = [1,2,3,"mohit","rohit",8,10.5];
+
+      // let last_value = x.pop();
+      // let first_value = x.shift();
+      // x.unshift(last_value)
+      // x.push(first_value)
+      // console.log(x)
+      // x.push("Anu"); // its insert new value on last index
+      // x.push("Mohit");
+      // x.pop(); // its remove value from last indexing
+      // x.pop();
+      // x.shift();
+      // x.unshift("Rahul"); // its insert new value on start
+      // x.shift();  // its remove value from staring index
+      // console.log(x)
+
+    
+
+      // slice -- splice
+      // let x = [10,20,30,40,50,60,70,80,90,100];
+      // let y = x.slice(2,6);
+      // console.log("original array :",x)
+      // console.log("slice array :",y)
+      // slice(start,end)
+      // console.log(x.slice(7,2))
+      // x.splice(-4,4,"mohit","rohit")
+      // console.log(x)
+      // [10,100]
+
+      // let x = [10,20,30,40,50,60,70,80,90,100];
+      // let p = []
+
+      // for(let i of x){
+
+      //    p.push(i*2)
+      // }
+
+      // console.log(p)
+
+      // let y = x.map((item)=>{
+            
+      //    return item*2
+      // })
+
+      // console.log(y)
+
+      // let y = x.map((item)=>item*2)
+      
+      // console.log(y)
+
+      // let y = x.filter(function(item){
+           
+      //        return item > 50;
+      // })
+
+      // console.log(y)
+
+      // let x  = [100,50,778,99,62,488,63];
+
+      // let ans = x.reduce((x,y)=>{
+           
+      //     return x+y;
+      // })
+
+      // console.log(ans)
+
+      // let x = "10,20,30,40,50,60,70";
+      // let y = x.split(",")
+      // let a = y.join(" ")
+      // console.log(typeof(a))
+
+
+      // let a = [10,20,30,[0,1,[true,['m','o',[0.1,0.2,["java","javascript"],0.3,0.4],'h','i','t'],false],2,3],40,50,60]
+
+
+      // console.log(a[3][2][1][2][2][1])
+
+
+      // let a = [10,20,30,[0,1,['m',[true,false],'o'],2,3],40,[5,6,['q','e'],7,8],50];
+
+      // console.log(a.flat(3))
+
+      // let a = [10,20,30,40,50];
+      // a.push("aman")
+      // a.push("rohit")
+      // a.pop()
+      // a.pop()
+      // a.shift()
+      // a.shift()
+      // a.unshift("aman")
+      // console.log(a)
+
+
+      // let a = [1,2,3,4,5,6,7,8,9,10];
+
+      // let y = a.filter((item)=>{
+         
+      //      return item<6;
+      // })
+
+      // console.log(y)
+
+      // let a = ['mohit','rohit','mohan','anu'];
+
+      // let b = a.map((item,indexing)=>{
+           
+      //   console.log(item,indexing)
+      // })
+    
+      // let d = a.filter((item)=>{
+
+      //     return item[0] == "m"
+      // })
+
+      // console.log(d)
+
+
+
+    </script>
+  </body>
+</html>

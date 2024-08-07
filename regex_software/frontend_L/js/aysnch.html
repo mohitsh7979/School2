@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let a = 10;
+      //   console.log(a);
+      //   let b = 20;
+      //   console.log(b);
+      //   let c = 30;
+      //   console.log(c);
+
+      //   setTimeout(() => {
+      //     for (let i = 0; i < 100000; i++) {
+      //       console.log(i);
+      //     }
+      //   }, 3000);
+
+      //   let d = 40;
+      //   console.log(d);
+      //   let e = 50;
+      //   console.log(e);
+      //   let f = 60;
+      //   console.log(f);
+
+      // let i = 0;
+      // setInterval(() => {
+      //     document.write(i,"<br>")
+      //     i++
+      // }, 500);
+
+      // setTimeout(()=>{
+      //     console.log("Hello")
+      // },3000)
+
+      // function Output(a,b,add){
+      //     sum(a,b)
+
+      // }
+
+      // function add(a,b){
+      //     console.log(a+b)
+      // }
+
+      // Output(10,20,add)
+
+      //   function Food(dish, order) {
+      //     setTimeout(() => {
+      //       console.log(dish);
+      //       if (order) {
+      //         order();
+      //       }
+      //     }, 3000);
+      //   }
+
+      //   Food("Pizza", () => {
+      //     Food("Burger", () => {
+      //       Food("Patties",()=>{
+      //         Food("Cold Drink",()=>{
+      //             Food("Chai")
+      //         })
+      //       });
+      //     });
+      //   });
+
+      // let prom = new Promise((resolve,reject)=>{
+
+      //       if(false){
+      //          resolve("Promise pura huaa !!")
+      //       }
+      //       else{
+      //          reject("Promise adhura rh gya !!")
+      //       }
+      //  })
+
+      //  prom.then((result)=>{
+      //       console.log(result)
+      //  }).catch((error)=>{
+      //       console.log(error)
+      //  })
+
+      // function prom() {
+
+      //  return new Promise((resolve, reject) => {
+      //     if (false) {
+      //       resolve("Promise pura huaa !!");
+      //     } else {
+      //       reject("Promise adhura rh gya !!");
+      //     }
+      //   });
+      // }
+
+      // prom().then((result) => {
+      //     console.log(result);
+      //   })
+      //   .catch((error) => {
+      //     console.log(error);
+      //   });
+
+      // function Food(dish) {
+      //   return new Promise((resolve, reject) => {
+      //     setTimeout(() => {
+      //       resolve(dish);
+      //     }, 3000);
+      //   });
+      // }
+
+      // Food("Pizza").then((data) => {
+      //   console.log("Pizza");
+
+      //   Food("Burger").then((data) => {
+      //     console.log(data);
+
+      //     Food("Patties").then((data)=>{
+
+      //        console.log(data)
+
+      //        Food("Cold Drink").then((data)=>{
+
+      //           console.log(data)
+      //        })
+      //     })
+      //   });
+      // });
+      // Food("Burger").then((data)=>console.log(data))
+
+      //  let ans =  Food("Pizza");
+
+      //  ans.then((data)=>{
+      //     console.log(data)
+      //  })
+
+      // function Food(dish) {
+      //   return new Promise((resolve, reject) => {
+      //     setTimeout(() => {
+      //       resolve(dish);
+      //     }, 3000);
+      //   });
+      // }
+
+      // async function Output(){
+
+      //   let pizza = await Food("Pizza");
+      //   console.log(pizza)
+      //   let burger = await Food("Burger");
+      //   console.log(burger)
+      //   let patties = await Food("Patties");
+      //    console.log(patties)
+      // }
+
+      // Output()
+
+      // console.log("I am one")
+      // console.log("I am two")
+      // console.log("I am three")
+
+      // let data = fetch("https://dummyjson.com/products");
+
+      // data.then((response) => {
+      //   response.json().then((result) => {
+      //     result.products.map((item) => {
+      //       console.log(item.id, item.title, item.price, item.images[0]);
+      //     });
+      //   });
+      // });
+
+      let my_api_data = fetch('https://dummyjson.com/users');
+      my_api_data.then((response)=>{
+           response.json().then((data)=>{
+             data.users.map((item)=>{
+              console.log(item.id,item.firstName)
+             })
+           })
+      })
+
+ 
+    </script>
+  </body>
+</html>
